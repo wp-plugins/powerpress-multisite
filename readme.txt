@@ -2,8 +2,8 @@
 Contributors: amandato, blubrry
 Donate link: http://www.blubrry.com/
 Tags: powerpress, multisite
-Requires at least: 3.7
-Tested up to: 3.8.1
+Requires at least: 3.8
+Tested up to: 4.1
 Stable tag: 0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -40,12 +40,15 @@ No screen shots at this time.
 
 == Changelog ==
 
+= 0.2 =
+* Released on TBD
+* Fixed warning message from being displayed when no checkboxes are selected upon saving settings.
+
 = 0.1 =
 * Released on 7/1/2014
 * First beta version
 
 == Upgrade Notice ==
 
-= 0.1 =
 None at this time.
 

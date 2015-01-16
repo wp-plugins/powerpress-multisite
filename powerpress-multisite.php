@@ -9,7 +9,7 @@
  * License: GPL2
  
 Requires at least: 3.8
-Tested up to: 3.9.1
+Tested up to: 4.1
 Text Domain: powerpress-multisite
 Change Log: See readme.txt for complete change log
 Contributors: Angelo Mandato, CIO RawVoice and host of the PluginsPodcast.com
@@ -248,12 +248,16 @@ class PowerPressMultiSitePlugin {
 						else
 							$Settings['disable_dashboard_stats'] = true;
 							
-						$NewSettings = $_POST['General'];
-						while( list($index,$value) = each($NewSettings) )
+						
+						if( !empty($_POST['General']) )
 						{
-							$Settings[$index] = $value;
+							$NewSettings = $_POST['General'];
+							while( list($index,$value) = each($NewSettings) )
+							{
+								$Settings[$index] = $value;
+							}
 						}
-							
+						
 						update_blog_option($blog_id, 'powerpress_general', $Settings);
 						
 						// Redirect to the sites.php page...
